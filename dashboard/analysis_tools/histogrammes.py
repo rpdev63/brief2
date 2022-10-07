@@ -49,7 +49,7 @@ def display_something(df, column_name, title) :
     
     dropdown = tkinter.Menubutton( root, text = "Modifier l'échantillon")
     choice = tkinter.Menu(dropdown, tearoff=0)
-    choice.add_command(label="totalité", command= lambda:[root.destroy(), display_something(df, current_parameter, "toutes les chansons")])
+    #choice.add_command(label="totalité", command= lambda:[root.destroy(), display_something(df, current_parameter, "toutes les chansons")])
     choice.add_command(label="top 100000", command= lambda:[root.destroy(), display_something(df2, current_parameter, "top 100000")])
     choice.add_command(label="top 2500", command= lambda:[root.destroy(),display_something(df3, current_parameter, "top 2500")])
     choice.add_command(label="top 50", command= lambda:[root.destroy(),display_something(df4, current_parameter, "top 50")])
