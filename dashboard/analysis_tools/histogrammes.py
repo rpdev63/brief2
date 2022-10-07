@@ -42,10 +42,10 @@ def display_something(df, column_name, title) :
 
     current_df = df
     current_parameter = column_name
-    df = pd.read_csv(r"C:\Users\utilisateur\Desktop\projets\angelia\Ressources\chansons.csv")
-    df2 = pd.read_csv(r"C:\Users\utilisateur\Desktop\projets\angelia\Ressources\top100000.csv")
-    df3 = pd.read_csv(r"C:\Users\utilisateur\Desktop\projets\angelia\Ressources\top2500_full.csv")
-    df4 = pd.read_csv(r"C:\Users\utilisateur\Desktop\projets\angelia\Ressources\top50.csv")
+    #df = pd.read_csv(r"..\Ressources\chansons.csv")
+    df2 = pd.read_csv(r"..\csv\top100000.csv")
+    df3 = pd.read_csv(r"..\csv\top2500_full.csv")
+    df4 = pd.read_csv(r"..\csv\top50.csv")
     
     dropdown = tkinter.Menubutton( root, text = "Modifier l'échantillon")
     choice = tkinter.Menu(dropdown, tearoff=0)

@@ -6,8 +6,8 @@ import analysis_tools.regmul as regmul
 
 import pandas as pd
 
-df_origine = pd.read_csv(r"..\Ressources\chansons.csv")
-df_100000 = pd.read_csv(r"..\Ressources\top100000.csv")
+df_origine = pd.read_csv(r"../Ressources/chansons.csv")
+df_100000 = pd.read_csv(r"../csv/top100000.csv")
 
 
 def create_frame1(window) :    
@@ -22,7 +22,7 @@ def create_frame2(window) :
     frame = Frame(window, background="#365BE3")
     label_title = Label(frame, text='Choix de l\'analyse', font=("Courrier",35), bg='#365BE3', fg="#F5FF27", pady=30)  # pour background, foreground
     label_title.pack(expand=YES, side=TOP) 
-    button1 = Button(frame, text="Graphiques de répartition", font=("Courrier",18), fg="#FFF", bg="#000",  pady=8,  command=lambda:[his.display_something(df_origine, "popularity", "totalité")])  
+    button1 = Button(frame, text="Graphiques de répartition", font=("Courrier",18), fg="#FFF", bg="#000",  pady=8,  command=lambda:[his.display_something(df_100000, "popularity", "totalité")])  
     button1.pack(fill=X, pady=8)
 
     button2 = Button(frame, text="Matrice de corrélation", font=("Courrier",18), fg="#FFF", bg="#000", highlightcolor="#F5FF27",pady=8, command=lambda:[hm.open_heatmap(df_100000)])
