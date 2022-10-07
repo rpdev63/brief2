@@ -9,7 +9,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 
 #### Importation de la base de donnée ----
-data = pd.read_csv(r"../csv/top100000.csv")
+data = pd.read_csv(r"../csv/top2500_full.csv")
 data.info()
 
 #### Détermination de la valeure à déterminer (y) par les valeures que l'on connaît (x)
@@ -57,7 +57,7 @@ print(test[0:50])
 mini = min(test[0:50])
 
 #### Importation de la nouvelle data pour tester le nombre de chanson sélectionner pour être dans le top 50
-data_test = pd.read_csv(r"D:/ressources/top100000.csv")
+data_test = pd.read_csv(r"../csv/top100000.csv")
 data_test = data_test[['song_duration_ms','explicit','song_danceability','song_energy','song_key','song_loudness','song_mode','song_speechiness','song_acousticness','song_instrumentalness','song_liveness','song_valence','song_tempo','song_time_signature','artistes_followers','artiste_popularity','genre_mode','genre_acousticness','genre_danceability','genre_duration_ms','genre_energy','genre_instrumentalness','genre_liveness','genre_loudness','genre_speechiness','genre_tempo','genre_valence','genre_popularity','genre_key']]
 
 xp = modele_rf.predict(data_test)

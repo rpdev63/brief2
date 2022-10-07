@@ -31,6 +31,7 @@ def create_frame2(window) :
     button4.pack(fill=X,  pady=8)  
     button3 = Button(frame, text="Prédiction par reg. lin. multiples", font=("Courrier",18), fg="#FFF", bg="#000",highlightcolor="#F5FF27", pady=8, command=lambda:[regmul.display_prediction(df_100000)])
     button3.pack(fill=X,  pady=8)
+    #methode à créer
     button5 = Button(frame, text="Prédiction par arbre de décision", font=("Courrier",18), fg="#FFF", bg="#000",highlightcolor="#F5FF27", pady=8, command=lambda:[])
     button5.pack(fill=X,  pady=8)
     
