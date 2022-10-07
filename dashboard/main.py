@@ -6,7 +6,7 @@ import analysis_tools.regmul as regmul
 
 import pandas as pd
 
-df_origine = pd.read_csv(r"../Ressources/chansons.csv")
+#df_origine = pd.read_csv(r"../Ressources/chansons.csv")
 df_100000 = pd.read_csv(r"../csv/top100000.csv")
 
 
